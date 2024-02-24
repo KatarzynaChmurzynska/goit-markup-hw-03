@@ -74,25 +74,6 @@ address {
   color: #404bbf;
 }
 
-.header-primary {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  color: #fff;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-.button {
-  background: #4d5ae5;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #fff;
-  cursor: pointer;
-}
-
 .button:hover,
 .button:focus {
   background: #404bbf;
@@ -142,8 +123,10 @@ address {
   padding: 0 15px;
   margin: 0 auto;
 }
-
-header .container {
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header .container {
   display: flex;
   gap: 332px;
 }
@@ -186,13 +169,28 @@ header .container {
 .header-primary {
   max-width: 496px;
   height: 120px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 .button {
+  display: block;
   min-width: 169px;
   height: 56px;
-  padding: 16 32 16 32;
   border: none;
+  padding: 16 32 16 32;
   border-radius: 4px;
+  background: #4d5ae5;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
 }
 
 .solutions-section {
@@ -200,7 +198,6 @@ header .container {
 }
 .solutions-list {
   display: flex;
-  height: 104px;
   gap: 24px;
 }
 
@@ -214,6 +211,7 @@ header .container {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .solutions-list-items {
   width: calc((100% - 72px) / 4);
@@ -225,7 +223,7 @@ header .container {
 .team-section {
   padding: 120px 0;
 }
-.team-section h2 {
+.team-section .header-secondary {
   text-align: center;
   margin-bottom: 72px;
 }
@@ -253,12 +251,10 @@ img {
   height: 56px;
   box-sizing: border-box;
   padding: 32px 16px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
-.title .card-content {
-  margin-bottom: 8px;
-  text-align: center;
-}
 .portfolio-section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -302,9 +298,7 @@ img {
   height: 72px;
   width: 264px;
 }
-.header {
-  border-bottom: 1px solid #e7e9fc;
-}
+
 .page-footer .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
