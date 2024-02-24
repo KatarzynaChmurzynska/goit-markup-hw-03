@@ -173,15 +173,17 @@ header .container {
 .page-navigation {
   display: flex;
   align-items: center;
-  gap: 76px;
+}
+.page-navigation .logo {
+  margin-right: 76px;
+}
+.page-navigation .menu {
+  display: flex;
+  gap: 40px;
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.page-navigation ul {
-  display: flex;
-  gap: 40px;
-}
-.address ul {
+.address .contacts {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -194,17 +196,20 @@ header .container {
   height: 600px;
   align-items: center;
   padding-top: 188px;
+  padding-bottom: 188px;
   gap: 48px;
 }
 
 .header-primary {
-  width: 496px;
+  max-width: 496px;
   height: 120px;
 }
 .button {
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   padding: 16 32 16 32;
+  border: none;
+  border-radius: 4px;
 }
 .wrapper {
   display: flex;
@@ -215,6 +220,7 @@ header .container {
   display: flex;
   height: 104px;
   gap: 24px;
+  padding: 120px 0;
 }
 .team-section ul {
   display: flex;
@@ -288,4 +294,7 @@ img {
 .footer-text {
   height: 72px;
   width: 264px;
+}
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
