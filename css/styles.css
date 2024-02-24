@@ -209,14 +209,13 @@ header .container {
   flex-direction: column;
   gap: 120px;
 }
-.solutions-section .solutions-list {
+.solutions-list {
   display: flex;
   height: 104px;
-  gap: 24px;
   padding: 120px 0;
 }
 
-.header-secondary .visually-hiden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -226,7 +225,12 @@ header .container {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  ovwerflow: hidden;
+}
+.solutions-list-items {
+  width: calc((100% - 72px) / 4);
+}
+.solutions-list-items .title {
+  margin-bottom: 8px;
 }
 
 .team-section ul {
