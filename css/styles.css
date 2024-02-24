@@ -146,18 +146,7 @@ address {
 .footer-text {
   color: #f4f4fd;
 }
-.visually-hiden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  ovwerflow: hidden;
-}
+
 .container {
   max-width: 1158px;
   padding: 0 15px;
@@ -220,12 +209,26 @@ header .container {
   flex-direction: column;
   gap: 120px;
 }
-.solutions-section ul {
+.solutions-section .solutions-list {
   display: flex;
   height: 104px;
   gap: 24px;
   padding: 120px 0;
 }
+
+.header-secondary .visually-hiden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  ovwerflow: hidden;
+}
+
 .team-section ul {
   display: flex;
   gap: 24px;
