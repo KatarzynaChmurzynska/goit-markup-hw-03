@@ -73,9 +73,7 @@ address {
 .address .link:focus {
   color: #404bbf;
 }
-.page-title {
-  background-color: #2e2f42;
-}
+
 .header-primary {
   font-weight: 700;
   font-size: 56px;
@@ -183,6 +181,9 @@ header .container {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.menu .link {
+  padding: 24px 0;
+}
 .address .contacts {
   display: flex;
   align-items: center;
@@ -190,13 +191,16 @@ header .container {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.page-title {
+  background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  height: 600px;
+}
 .page-title .container {
   display: flex;
   flex-direction: column;
-  height: 600px;
   align-items: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
   gap: 48px;
 }
 
