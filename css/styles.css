@@ -225,6 +225,10 @@ header .container {
 .team-section {
   padding: 120px 0;
 }
+.team-section h2 {
+  text-align: center;
+  margin-bottom: 72px;
+}
 .team-section .team-list {
   display: flex;
   gap: 24px;
@@ -248,14 +252,13 @@ img {
   width: 232px;
   height: 56px;
   box-sizing: border-box;
-  text-align: center;
   padding: 32px 16px;
 }
-.team-section h2 {
-  text-align: center;
-  margin-bottom: 72px;
-}
 
+.title .card-content {
+  margin-bottom: 8px;
+  text-align: center;
+}
 .portfolio-section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -283,8 +286,8 @@ img {
   width: 360px;
   height: 120px;
 }
-.project-card-content p {
-  margin-bottom: 8px;
+.project-card-content .text {
+  margin-top: 8px;
 }
 .page-footer .container {
   display: flex;
@@ -312,8 +315,5 @@ img {
   color: #4d5ae5;
   font-optical-sizing: auto;
   margin-bottom: 16px;
-}
-
-.page-footer a {
   display: inline-block;
 }
